@@ -5,10 +5,13 @@
   </a>
 </li>
 
-<li class="pc-item pc-caption">
-  <label>UI Components</label>
-  <i class="ti ti-dashboard"></i>
+<li class="pc-item pc-hasmenu">
+  <a href="#!" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-users"></i></span><span class="pc-mtext">Users Management</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+  <ul class="pc-submenu">
+    <li class="pc-item"><a class="pc-link" href="#!"><span class="pc-micon"><i class="ti ti-typography"></i></span>All Users</a></li>
+  </ul>
 </li>
+
 <li class="pc-item">
   <a href="../elements/bc_typography.html" class="pc-link">
     <span class="pc-micon"><i class="ti ti-typography"></i></span>
@@ -50,8 +53,7 @@
   <i class="ti ti-brand-chrome"></i>
 </li>
 <li class="pc-item pc-hasmenu">
-  <a href="#!" class="pc-link"><span class="pc-micon"><i class="ti ti-menu"></i></span><span class="pc-mtext">Menu
-      levels</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+  <a href="#!" class="pc-link"><span class="pc-micon"><i class="ti ti-menu"></i></span><span class="pc-mtext">Menu levels</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
   <ul class="pc-submenu">
     <li class="pc-item"><a class="pc-link" href="#!">Level 2.1</a></li>
     <li class="pc-item pc-hasmenu">

@@ -2363,13 +2363,6 @@ textarea.form-control-lg {
   --bs-btn-border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn {
-  --bs-btn-padding-y: 0.25rem;
-  --bs-btn-padding-x: 0.5rem;
-  --bs-btn-font-size: 0.765625rem;
-  --bs-btn-border-radius: 2px;
-}
-
 .fade {
   transition: opacity 0.15s linear;
 }
@@ -2793,6 +2786,11 @@ textarea.form-control-lg {
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
+}
+
+.list-unstyled {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
@@ -3470,7 +3468,7 @@ textarea.form-control-lg {
 }
 
 .card-header {
-  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
@@ -16015,8 +16013,13 @@ pre[class*=language-] > code {
   }
 }
 .pc-container .page-header + .row {
-  padding-top: 24px;
+  padding-top: 8px;
 }
+
+.float-right {
+  float: right !important;
+}
+
 .pc-container .page-header + .pc-content {
   padding-top: 85px;
 }
@@ -16046,11 +16049,12 @@ pre[class*=language-] > code {
   font-weight: 500;
 }
 .page-header .breadcrumb {
-  padding: 0;
+  padding: 0.75rem 1rem;
   display: inline-flex;
   margin-bottom: 0;
-  background: transparent;
+  background: #eaecf4;
   font-size: 13px;
+  border-radius: 0.35rem;
 }
 .page-header .breadcrumb a {
   color: var(--bs-body-color);
@@ -19553,6 +19557,7 @@ pre[class*=language-] > code {
 }
 .card .card-header {
   border-bottom: 1px solid var(--bs-card-border-color);
+  background-color: #f3f3f3;
 }
 .card .card-header h5, .card .card-header .h5 {
   margin-bottom: 0;
@@ -21131,9 +21136,12 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
   display: flex;
   align-items: center;
 }
+.is_required {
+  color: #FB5E5B;
+}
 .auth-main .auth-wrapper.v3 .auth-form {
   flex-direction: column;
-  background: url("../images/authentication/img-auth-bg.svg");
+  background: url("../images/favicon.png");
   min-height: 100vh;
   padding: 24px;
   background-repeat: no-repeat;

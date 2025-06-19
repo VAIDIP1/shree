@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" id="main-font-link">
 <!-- [Tabler Icons] https://tablericons.com -->
 <link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css" >
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <!-- [Feather Icons] https://feathericons.com -->
 {{-- <link rel="stylesheet" href="../assets/fonts/feather.css" > --}}
 <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
