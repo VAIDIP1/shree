@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
+use Illuminate\Container\Attributes\Auth;
 use Illuminate\Support\Facades\Route;
 
 // Admin Authentication Routes
@@ -13,8 +15,11 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/validate-email', [AuthController::class, 'validateEmail'])->name('validate-email');
 
-// Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('dashboard');
-// });
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
+
+
+    // User Management Routes
+    Route::get('admin/all-users', [UserController::class, 'allUsers'])->name('all-users');
+});
+

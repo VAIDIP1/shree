@@ -1,14 +1,15 @@
 <li class="pc-item">
-  <a href="../dashboard/index.html" class="pc-link">
+  <a href="{{ route('dashboard') }}" class="pc-link">
     <span class="pc-micon"><i class="ti ti-dashboard"></i></span>
     <span class="pc-mtext">Dashboard</span>
   </a>
 </li>
 
 <li class="pc-item pc-hasmenu">
-  <a href="#!" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-users"></i></span><span class="pc-mtext">Users Management</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+  <a href="#!" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-users-gear" style="color: #ce0909;"></i></span><span class="pc-mtext">Users Management</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
   <ul class="pc-submenu">
-    <li class="pc-item"><a class="pc-link" href="#!"><span class="pc-micon"><i class="ti ti-typography"></i></span>All Users</a></li>
+    <li class="pc-item"><a class="pc-link" href="{{ route('all-users') }}"><span class="pc-micon"><i class="fa-solid fa-users" style="color: #ce0909;"></i></span>All Users</a></li>
+    <li class="pc-item"><a class="pc-link" href="#"><span class="pc-micon"><i class="fa-solid fa-users" style="color: #ce0909;"></i></span>Pending Request</a></li>
   </ul>
 </li>
 

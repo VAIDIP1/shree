@@ -21059,6 +21059,17 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
   text-decoration: none;
 }
 
+a,
+span,
+.nav-link,
+.sidebar-link,
+.menu-label,
+.menu-title,
+.breadcrumb-item,
+i {
+  text-decoration: none !important;
+}
+
 .validate-me .error {
   border-color: #ff4d4f;
 }
