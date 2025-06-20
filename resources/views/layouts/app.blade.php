@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  @include('layouts/head-css')
+  @include('layouts.head-css')
 </head>
 
 <body>
-  @include('layouts/layout-vertical')
+  @include('layouts.layout-vertical')
 
   <!-- [ Main Content ] start -->
   <div class="pc-container">
@@ -17,7 +17,7 @@
     </div>
   </div>
   <!-- [Page Specific JS] end -->
-  @include('layouts/footer-js')
+  @include('layouts.footer-js')
 </body>
 <!-- [Body] end -->
 

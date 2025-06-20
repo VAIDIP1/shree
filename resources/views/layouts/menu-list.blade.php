@@ -5,31 +5,28 @@
   </a>
 </li>
 
-<li class="pc-item pc-hasmenu">
-  <a href="#!" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-users-gear" style="color: #ce0909;"></i></span><span class="pc-mtext">Users Management</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+<li class="pc-item pc-hasmenu" data-accordion="true">
+  <a href="javascript:void(0);" class="pc-link">
+    <span class="pc-micon"><i class="fa-solid fa-gear" style="color: #ce0909;"></i></span>
+    <span class="pc-mtext">Users Management</span>
+    <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
+  </a>
   <ul class="pc-submenu">
-    <li class="pc-item"><a class="pc-link" href="{{ route('all-users') }}"><span class="pc-micon"><i class="fa-solid fa-users" style="color: #ce0909;"></i></span>All Users</a></li>
-    <li class="pc-item"><a class="pc-link" href="#"><span class="pc-micon"><i class="fa-solid fa-users" style="color: #ce0909;"></i></span>Pending Request</a></li>
+    <li class="pc-item"><a class="pc-link" href="{{ route('all-users') }}"><span class="pc-micon"><i class="fa-solid fa-users" style="color: #e25959;"></i>All Users</a></li>
+    <li class="pc-item"><a class="pc-link" href="#">Pending Request</a></li>
   </ul>
 </li>
 
-<li class="pc-item">
-  <a href="../elements/bc_typography.html" class="pc-link">
-    <span class="pc-micon"><i class="ti ti-typography"></i></span>
-    <span class="pc-mtext">Typography</span>
+<li class="pc-item pc-hasmenu" data-accordion="true">
+  <a href="javascript:void(0);" class="pc-link">
+    <span class="pc-micon"><i class="fa-solid fa-gear" style="color: #ce0909;"></i></span>
+    <span class="pc-mtext">Roles & Permission</span>
+    <span class="pc-arrow"><i data-feather="chevron-right"></i></span>
   </a>
-</li>
-<li class="pc-item">
-  <a href="../elements/bc_color.html" class="pc-link">
-    <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
-    <span class="pc-mtext">Color</span>
-  </a>
-</li>
-<li class="pc-item">
-  <a href="../elements/icon-tabler.html" class="pc-link">
-    <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
-    <span class="pc-mtext">Icons</span>
-  </a>
+  <ul class="pc-submenu">
+    <li class="pc-item"><a class="pc-link" href="{{ route('roles.index') }}"><span class="pc-micon"><i class="fa-solid fa-gears" style="color: #e25959;"></i></span>Roles</a></li>
+    <li class="pc-item"><a class="pc-link" href="#"><span class="pc-micon"><i class="fa-solid fa-file-lines" style="color: #e25959;"></i></span>Permissions</a></li>
+  </ul>
 </li>
 
 <li class="pc-item pc-caption">

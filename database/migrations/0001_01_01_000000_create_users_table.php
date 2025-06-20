@@ -18,9 +18,12 @@ return new class extends Migration
             $table->string('first_name', 255)->nullable();
             $table->string('last_name', 255)->nullable();
             $table->string('mobile_number', 30)->nullable();
+            $table->string('username', 255)->nullable();
+            $table->foreignId('role_id')->nullable()->constrained()->references('id')->on('roles')->cascadeOnUpdate()->cascadeOnDelete()->index('users_ibfk_1');
             $table->string('password', 255)->nullable();
             $table->string('reset_password_token')->nullable();
             $table->string('profile_photo', 255)->default('sample.png')->nullable();
+            $table->string('company_name', 255)->nullable();
             $table->date('date_of_birth')->nullable();
             $table->unsignedTinyInteger('status')->default(1)->comment('0 => Active, 1 => InActive, 2 => Blocked');
             $table->unsignedTinyInteger('is_emailverified')->default(0)->comment('1 => YES, 0 => NO');
